@@ -435,7 +435,6 @@ body{
 
 .contenedor__about{
     display: flex;
-    border: 3px solid var(--color-player)
 }
 
 
