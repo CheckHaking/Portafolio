@@ -435,6 +435,7 @@ body{
 
 .contenedor__about{
     display: flex;
+    width: 100%;
 }
 
 
