@@ -121,7 +121,11 @@ body{
     color: var(--color-player);
     padding: 0 10px;
     box-sizing: border-box;
-  
+}
+
+.text__email:read-only{
+    background-color: var(--color-primario);
+    color: var(--color-player);
 }
 
 .boton__copiar{
@@ -196,22 +200,56 @@ body{
     grid-row: 2;
     border: 2px solid var(--color-terciario);
     border-radius: 20px;
-    overflow:hidden;
+}
+
+.content__three{
+    display: flex;
+    justify-content: end;
+    width: 75%;
+    align-items: center;
+    gap: 40px;
+    font-family: var(--fuente-inconsolata);
+    font-size: 40px;
+    color: var(--color-player);
+
+
 }
 
 .subtitulo__secciones{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: var(--fuente-inconsolata);
     color: var(--color-player);
     padding: 4px;
     font-size: 2.5rem;
     margin: 10px;
     background-color: var(--color-secundario);
-    width: 300px;
     height: 50px;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.icon__download__container{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-secundario);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+}
+
+
+.icon__download__container:hover{
+    background-color:var(--color-player); /* Green */
+    color: var(--color-secundario);
+}
+
+.icon__download__txt img{
+    width: 60%;
+    height: 60%;
 }
 
 .subtitulo__secciones:hover{
@@ -287,7 +325,7 @@ body{
 }
 
 .lista__secciones {
-    list-style-type: disc;
+    list-style-type: none;
     margin-left: 100px;
     font-family: var(--fuente-inconsolata);
     font-size: 20px;
