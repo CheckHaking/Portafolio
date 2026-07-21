@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { TopNav } from "@/components/TopNav";
 import { Footer } from "@/components/Footer";
@@ -6,15 +5,17 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { profile } from "@/data/profile";
 import { biomedicalProjects } from "@/data/projects";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import { createPortfolioPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPortfolioPageMetadata({
   title: "Formación electromédica | Sergio Antunez Rios",
   description: "Formación en Ingeniería Electromédica, experiencia de servicio técnico y tesis de visión artificial aplicada.",
-  alternates: {
-    canonical: "/biomedica",
-    languages: { "es-MX": "/biomedica", en: "/en/background" }
-  }
-};
+  canonical: "/biomedica",
+  spanishPath: "/biomedica",
+  englishPath: "/en/background",
+  locale: "es_MX",
+  image: { url: "/images/about/graduacion-ulsa.jpeg", width: 853, height: 1280, alt: "Graduación de Sergio Antunez Rios en la Universidad La Salle Laguna" }
+});
 
 export default function BiomedicaPage() {
   return (

@@ -23,8 +23,10 @@ export const metadata: Metadata = {
   icons: { icon: "/icon.jpg" },
   alternates: {
     canonical: "/",
-    languages: { "es-MX": "/", en: "/en" }
+    languages: { "es-MX": "/", en: "/en", "x-default": "/" }
   },
+  authors: [{ name: "Sergio Antunez Rios", url: "/" }],
+  creator: "Sergio Antunez Rios",
   keywords: [
     "Biomedical Engineer",
     "Computer Vision",
@@ -40,6 +42,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sergio Antunez Rios | IA aplicada e Ingeniería Electromédica",
     description: "Computer Vision, software y hardware aplicados a industria y salud.",
+    url: "/",
+    siteName: "Sergio Antunez Rios",
     type: "website",
     locale: "es_MX",
     alternateLocale: ["en_US"],

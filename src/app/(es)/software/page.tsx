@@ -1,19 +1,20 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { TopNav } from "@/components/TopNav";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 import { softwareProjects } from "@/data/projects";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import { createPortfolioPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPortfolioPageMetadata({
   title: "Plataformas empresariales e IA aplicada | Sergio Antunez Rios",
   description: "Casos de software empresarial, automatización e IA aplicada con valor operativo documentado.",
-  alternates: {
-    canonical: "/software",
-    languages: { "es-MX": "/software", en: "/en/work" }
-  }
-};
+  canonical: "/software",
+  spanishPath: "/software",
+  englishPath: "/en/work",
+  locale: "es_MX",
+  image: { url: "/images/perfil.jpeg", width: 800, height: 800, alt: "Sergio Antunez Rios" }
+});
 
 export default function SoftwarePage() {
   // Separar piezas maestras de apps específicas

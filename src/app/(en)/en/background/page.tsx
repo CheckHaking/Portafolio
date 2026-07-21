@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { Footer } from "@/components/Footer";
@@ -6,15 +5,17 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { TopNav } from "@/components/TopNav";
 import { biomedicalProjectsEn } from "@/data/projects-en";
 import { profile } from "@/data/profile";
+import { createPortfolioPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPortfolioPageMetadata({
   title: "Electromedical Background | Sergio Antunez Rios",
   description: "Electromedical engineering education, technical-service experience and an applied Computer Vision thesis.",
-  alternates: {
-    canonical: "/en/background",
-    languages: { "es-MX": "/biomedica", en: "/en/background" }
-  }
-};
+  canonical: "/en/background",
+  spanishPath: "/biomedica",
+  englishPath: "/en/background",
+  locale: "en_US",
+  image: { url: "/images/about/graduacion-ulsa.jpeg", width: 853, height: 1280, alt: "Sergio Antunez Rios graduating from Universidad La Salle Laguna" }
+});
 
 const distinctions = [
   "Final GPA: 9.6/10",

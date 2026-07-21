@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { TopNav } from "@/components/TopNav";
 import { Footer } from "@/components/Footer";
@@ -8,15 +7,17 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { ThesisResearchGallery } from "@/components/ThesisResearchGallery";
 import { ResearchScopeNote } from "@/components/ResearchScopeNote";
 import { ThesisTechnicalSummary } from "@/components/ThesisTechnicalSummary";
+import { createPortfolioPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPortfolioPageMetadata({
   title: "Investigación en visión artificial industrial | Sergio Antunez Rios",
   description: "Caso técnico de un prototipo de visión artificial e interbloqueo para seguridad industrial, con resultados y limitaciones por entorno.",
-  alternates: {
-    canonical: "/interseccion",
-    languages: { "es-MX": "/interseccion", en: "/en/research" }
-  }
-};
+  canonical: "/interseccion",
+  spanishPath: "/interseccion",
+  englishPath: "/en/research",
+  locale: "es_MX",
+  image: { url: "/images/thesis/detection.png", width: 1386, height: 788, alt: "Detección de mano en una prensa dobladora mediante visión artificial" }
+});
 
 export default function InterseccionPage() {
   const thesis = profile.education.thesis;

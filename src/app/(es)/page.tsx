@@ -9,6 +9,7 @@ import { ThesisEvidence } from "@/components/ThesisEvidence";
 import { ResearchScopeNote } from "@/components/ResearchScopeNote";
 import { LanguageSwitch } from "@/components/LanguageSwitch";
 import { SocialLinks } from "@/components/SocialLinks";
+import { ProfileStructuredData } from "@/components/ProfileStructuredData";
 import { profile } from "@/data/profile";
 
 const proof = [
@@ -71,6 +72,7 @@ const projects = [
 export default function HomePage() {
   return (
     <div className="site-shell">
+      <ProfileStructuredData />
       <header className="site-header">
         <Link className="site-brand" href="/" aria-label="Inicio">
           Sergio Antunez Rios

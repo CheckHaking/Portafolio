@@ -23,11 +23,15 @@ export const metadata: Metadata = {
   icons: { icon: "/icon.jpg" },
   alternates: {
     canonical: "/en",
-    languages: { "es-MX": "/", en: "/en" }
+    languages: { "es-MX": "/", en: "/en", "x-default": "/" }
   },
+  authors: [{ name: "Sergio Antunez Rios", url: "/" }],
+  creator: "Sergio Antunez Rios",
   openGraph: {
     title: "Sergio Antunez Rios | Applied AI and Electromedical Engineering",
     description: "Computer Vision, software and hardware applied to industry and healthcare.",
+    url: "/en",
+    siteName: "Sergio Antunez Rios",
     type: "website",
     locale: "en_US",
     alternateLocale: ["es_MX"],

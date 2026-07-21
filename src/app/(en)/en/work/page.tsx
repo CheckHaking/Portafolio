@@ -1,19 +1,20 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 import { TopNav } from "@/components/TopNav";
 import { softwareProjectsEn } from "@/data/projects-en";
+import { createPortfolioPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPortfolioPageMetadata({
   title: "Selected Software Work | Sergio Antunez Rios",
   description: "Enterprise products, B2B software and internal automation focused on measurable operational value.",
-  alternates: {
-    canonical: "/en/work",
-    languages: { "es-MX": "/software", en: "/en/work" }
-  }
-};
+  canonical: "/en/work",
+  spanishPath: "/software",
+  englishPath: "/en/work",
+  locale: "en_US",
+  image: { url: "/images/perfil.jpeg", width: 800, height: 800, alt: "Sergio Antunez Rios" }
+});
 
 export default function EnglishWorkPage() {
   const masterPieces = softwareProjectsEn.filter((project) =>

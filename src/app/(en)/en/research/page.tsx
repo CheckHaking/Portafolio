@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { Footer } from "@/components/Footer";
 import { ThesisResearchGallery } from "@/components/ThesisResearchGallery";
@@ -7,16 +6,18 @@ import { TopNav } from "@/components/TopNav";
 import { profile } from "@/data/profile";
 import { ResearchScopeNote } from "@/components/ResearchScopeNote";
 import { ThesisTechnicalSummary } from "@/components/ThesisTechnicalSummary";
+import { createPortfolioPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPortfolioPageMetadata({
   title: "Industrial Computer Vision Research | Sergio Antunez Rios",
   description:
     "Technical case study of a YOLOv8 and Jetson Nano safety-interlock prototype, including in-domain results and transfer limitations.",
-  alternates: {
-    canonical: "/en/research",
-    languages: { "es-MX": "/interseccion", en: "/en/research" }
-  }
-};
+  canonical: "/en/research",
+  spanishPath: "/interseccion",
+  englishPath: "/en/research",
+  locale: "en_US",
+  image: { url: "/images/thesis/detection.png", width: 1386, height: 788, alt: "Computer Vision hand detection on a press brake" }
+});
 
 export default function EnglishResearchPage() {
   const thesis = profile.education.thesis;

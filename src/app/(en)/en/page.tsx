@@ -8,6 +8,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { LanguageSwitch } from "@/components/LanguageSwitch";
 import { SocialLinks } from "@/components/SocialLinks";
+import { ProfileStructuredData } from "@/components/ProfileStructuredData";
 import { ThesisEvidence } from "@/components/ThesisEvidence";
 import { ResearchScopeNote } from "@/components/ResearchScopeNote";
 import { profile } from "@/data/profile";
@@ -78,6 +79,7 @@ const projects = [
 export default function EnglishHomePage() {
   return (
     <div className="site-shell" lang="en">
+      <ProfileStructuredData language="en" />
       <header className="site-header">
         <Link className="site-brand" href="/en" aria-label="Home">
           Sergio Antunez Rios
