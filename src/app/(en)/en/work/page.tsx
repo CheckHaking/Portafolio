@@ -43,8 +43,9 @@ export default function EnglishWorkPage() {
           <p className="about-prose" style={{ maxWidth: "65ch" }}>
             These cases are selected for the value they create: space-planning software with
             an integrated catalog that reduces dependence on external licenses, a shared platform for several business
-            areas and an end-to-end B2B commercial product. Public descriptions intentionally
-            omit architecture, vendors and internal implementation details.
+            areas and a B2B commercial product with an end-to-end frontend and AI agent. Public descriptions omit
+            vendors, servers and internal operational details while retaining the engineering methods that demonstrate
+            my professional practice.
           </p>
         </header>
 
@@ -52,7 +53,7 @@ export default function EnglishWorkPage() {
           <h2 className="section-block-label">Anchor projects</h2>
           {masterPieces.map((project) => <ProjectCard key={project.id} project={project} language="en" />)}
           <p className="method-note">
-            <strong>Financial-scenario basis:</strong> 17 licenses at US$1,420 per year
+            <strong>Financial-scenario basis for the space-planning software:</strong> 17 licenses at US$1,420 per year
             with a 10% volume discount equal US$21,726 annually, before extensions.
             This represents a potentially avoidable cost reference, not confirmed
             accounting savings. Source: {" "}

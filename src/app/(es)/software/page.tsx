@@ -58,8 +58,9 @@ export default function SoftwarePage() {
           <p className="about-prose" style={{ maxWidth: "65ch" }}>
             Casos seleccionados por el valor que generan: un software de sembrado con
             catálogo integrado que reduce dependencia de licencias externas, una plataforma compartida para distintas áreas
-            y un producto comercial B2B desarrollado de extremo a extremo. La información
-            pública omite deliberadamente arquitectura, proveedores y detalles internos.
+            y un producto comercial B2B con frontend y agente de IA desarrollados de extremo a extremo. La información
+            pública omite proveedores, servidores y detalles operativos internos; sí presenta los métodos de ingeniería
+            que forman parte de mi práctica profesional.
           </p>
         </header>
 
@@ -70,7 +71,7 @@ export default function SoftwarePage() {
             <ProjectCard key={project.id} project={project} />
           ))}
           <p className="method-note">
-            <strong>Base del escenario financiero:</strong> 17 licencias por US$1,420
+            <strong>Base del escenario financiero del software de sembrado:</strong> 17 licencias por US$1,420
             anuales con 10% de descuento por volumen equivalen a US$21,726 al año,
             antes de extensiones. Es una referencia de costo potencialmente evitable,
             no un ahorro contable confirmado. Fuente: {" "}

@@ -27,8 +27,8 @@ const proof = [
   },
   {
     value: "US$21.7k",
-    label: "Ahorro anual proyectado",
-    detail: "Escenario de sustitución de 17 licencias, antes de extensiones; pendiente de validación interna",
+    label: "Ahorro anual proyectado en sembrado",
+    detail: "Escenario de sustitución de 17 licencias especializadas; pendiente de validación interna",
     tone: "mineral"
   },
   {

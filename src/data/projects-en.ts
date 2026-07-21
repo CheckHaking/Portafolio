@@ -9,13 +9,13 @@ const softwareCopy: Record<string, Partial<Project>> = {
     problem:
       "Leadership needs a reliable, shared view of company status and growth.",
     highlights: [
-      "Currently produces executive reporting on company status and growth",
-      "Centralizes metric definitions to reduce inconsistent interpretations across reports",
-      "Prepared to incorporate operational and management KPIs across organizational levels",
-      "Access is designed around data domains and responsibilities to protect sensitive information"
+      "My role: principal engineer of the data platform, with approximately 93% of the contributions recorded in the repository",
+      "Dimensional modeling with a star schema and SQL transformation layer to maintain consistent metrics",
+      "Service API and infrastructure as code for reproducible deployment and operation",
+      "Automated reconciliation across multiple sources to the cent, with access segmented by data domain and responsibility"
     ],
-    metrics: ["Executive reporting", "Multi-level KPIs", "Segmented access"],
-    stack: []
+    metrics: ["~93% of contributions", "Executive reporting", "Segmented access"],
+    stack: ["Dimensional modeling", "SQL", "Service API", "Infrastructure as code"]
   },
   "sw-space-planning-software": {
     title: "Internal space-planning and catalog software",
@@ -26,26 +26,26 @@ const softwareCopy: Record<string, Partial<Project>> = {
     highlights: [
       "Moved from MVP to production and supports a workflow for approximately 17 users",
       "My responsibility: information architecture, catalog administration, imports, cleanup and implementation",
-      "Thousands of records reconstructed and drawing-resource coverage increased from approximately 78% to nearly 98%",
+      "Rebuilt the product hierarchy from legacy CAD catalog formats; drawing-resource coverage increased from approximately 78% to nearly 98%",
       "US$21.7k+ annual base cost potentially avoidable; scenario modeled from public 2026 pricing and pending internal validation"
     ],
     metrics: ["US$21.7k+ annual potential", "In production", "Nearly 98% coverage"],
-    stack: []
+    stack: ["Information architecture", "Data migration", "CAD catalog reconstruction"]
   },
   "sw-modular-enterprise-platform": {
     title: "Master platform for internal applications",
     summary:
-      "Internal platform bringing operational, sales, human-resources, finance and automation applications into a shared foundation for several companies in the group.",
+      "Internal platform bringing operational, sales, human-resources, finance and automation applications into a shared foundation for several companies in the group. I contribute to its co-architecture and evolution as a cross-functional product.",
     problem:
       "Each business area addressed operational needs in separate tools, duplicating effort and maintenance.",
     highlights: [
-      "Shared foundation for applications used by multiple operational areas",
-      "Reduces duplication and supports coordinated evolution of internal products",
-      "Multi-company support within one industrial group",
+      "My role: core engineer and one of the top-two contributors across backend and frontend of a platform developed by multiple teams",
+      "Multi-company architecture and shared services for applications used across operational areas",
+      "Shared CI/CD for coordinated deployment and evolution of internal products",
       "Covers operations, sales, human resources, finance and automation"
     ],
-    metrics: ["In production", "Multiple operational areas", "Multi-company"],
-    stack: []
+    metrics: ["Core engineer", "In production", "Multi-company"],
+    stack: ["Multi-company architecture", "Shared services", "CI/CD"]
   },
   "sw-packaging-operations-system": {
     title: "Packaging operations system",
@@ -65,18 +65,18 @@ const softwareCopy: Record<string, Partial<Project>> = {
   "sw-industrial-sales-crm": {
     title: "Industrial Sales CRM Platform",
     summary:
-      "End-to-end B2B commercial product that centralizes follow-up, opportunities, quotations and communication across a multi-brand and multi-branch operation.",
+      "B2B commercial product centralizing follow-up, opportunities, quotations and communication across a multi-brand and multi-branch operation. I led product design and implemented the frontend and AI agent; the backend was built with a development partner.",
     problem:
       "The commercial operation was fragmented across brands, branches, channels and follow-up stages.",
     highlights: [
-      "Single-author product design and end-to-end implementation",
+      "My role: product design and end-to-end implementation of the frontend and AI agent, with the backend built by a development partner",
+      "Real-time AI agent using RAG and tool calling, integrated into the sales workflow",
       "Centralized commercial process from initial contact through quotation",
       "Multi-brand and multi-branch follow-up in a shared operational flow",
-      "Communication-channel and workflow automation",
-      "Dashboards supporting commercial-performance follow-up"
+      "Communication-channel automation and commercial-performance dashboards"
     ],
-    metrics: ["End-to-end ownership", "Multi-brand", "Multi-branch"],
-    stack: []
+    metrics: ["Frontend + AI agent", "Multi-brand", "Multi-branch"],
+    stack: ["Product design", "Frontend", "RAG", "Tool calling"]
   },
   "sw-content-intelligence-system": {
     title: "Content Intelligence and Publishing System",

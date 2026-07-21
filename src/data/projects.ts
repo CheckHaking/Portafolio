@@ -67,13 +67,13 @@ export const softwareProjects: Project[] = [
       "Dirección necesita una lectura confiable y compartida del estado y crecimiento de la empresa.",
     tags: ["enterprise", "workflow", "automation", "productivity"],
     highlights: [
-      "Actualmente genera reportes ejecutivos para Dirección sobre estado y crecimiento de la empresa",
-      "Centraliza definiciones e indicadores para reducir interpretaciones inconsistentes entre reportes",
-      "Preparado para incorporar KPIs operativos y de gestión en distintos niveles de la organización",
-      "El acceso se diseña por dominio y responsabilidad para proteger información sensible"
+      "Mi rol: responsable principal de la plataforma de datos, con cerca del 93% de las contribuciones registradas en el repositorio",
+      "Modelado dimensional con esquema estrella y una capa de transformaciones SQL para mantener métricas consistentes",
+      "API de servicio e infraestructura como código para desplegar y operar la plataforma de forma reproducible",
+      "Conciliación automatizada de múltiples fuentes hasta el centavo, con acceso segmentado por dominio y responsabilidad"
     ],
-    metrics: ["Reportes para Dirección", "KPIs multinivel", "Acceso segmentado"],
-    stack: []
+    metrics: ["~93% de contribuciones", "Reportes para Dirección", "Acceso segmentado"],
+    stack: ["Modelado dimensional", "SQL", "API de servicio", "Infraestructura como código"]
   },
   {
     id: "sw-space-planning-software",
@@ -86,11 +86,11 @@ export const softwareProjects: Project[] = [
     highlights: [
       "Pasó de MVP a producción y habilita el flujo de aproximadamente 17 usuarios",
       "Mi responsabilidad: arquitectura de información, administración del catálogo, importación, depuración e implementación",
-      "Reconstrucción de miles de registros y cobertura de recursos de dibujo elevada de aproximadamente 78% a cerca de 98%",
+      "Reconstruí la jerarquía de productos a partir de formatos de catálogo CAD heredados; la cobertura de recursos de dibujo aumentó de aproximadamente 78% a cerca de 98%",
       "Costo base potencialmente evitable de US$21.7k+ al año; escenario estimado con precios públicos de 2026, pendiente de validación interna"
     ],
     metrics: ["US$21.7k+ al año potenciales", "En producción", "Cobertura cercana al 98%"],
-    stack: []
+    stack: ["Arquitectura de información", "Migración de datos", "Reconstrucción de catálogos CAD"]
   },
   {
     id: "sw-modular-enterprise-platform",
@@ -101,17 +101,17 @@ export const softwareProjects: Project[] = [
       "Cada área resolvía necesidades operativas en herramientas separadas, duplicando esfuerzo y mantenimiento.",
     tags: ["full-stack", "enterprise", "api", "docker", "ai", "saas"],
     highlights: [
-      "Base compartida para aplicaciones utilizadas por múltiples áreas operativas",
-      "Reduce duplicidad entre soluciones y facilita la evolución coordinada de productos internos",
-      "Soporte multiempresa dentro de un mismo grupo industrial",
+      "Mi rol: ingeniero central y uno de los dos principales contribuidores entre backend y frontend de una plataforma desarrollada por varios equipos",
+      "Arquitectura multiempresa y servicios compartidos para aplicaciones utilizadas por distintas áreas operativas",
+      "CI/CD común para desplegar y evolucionar productos internos de forma coordinada",
       "Cubre operaciones, ventas, recursos humanos, finanzas y automatización"
     ],
     metrics: [
+      "Ingeniero central",
       "En producción",
-      "Múltiples áreas operativas",
       "Soporte multiempresa"
     ],
-    stack: []
+    stack: ["Arquitectura multiempresa", "Servicios compartidos", "CI/CD"]
   },
   {
     id: "sw-packaging-operations-system",
@@ -134,23 +134,23 @@ export const softwareProjects: Project[] = [
     id: "sw-industrial-sales-crm",
     title: "Plataforma CRM comercial B2B",
     summary:
-      "Producto comercial B2B desarrollado de extremo a extremo para centralizar seguimiento, oportunidades, cotizaciones y comunicación en una operación multimarca y multisucursal.",
+      "Producto comercial B2B para centralizar seguimiento, oportunidades, cotizaciones y comunicación en una operación multimarca y multisucursal. Lideré el diseño del producto y la implementación del frontend y el agente de IA; el backend fue desarrollado con un socio.",
     problem:
       "La operación comercial estaba fragmentada entre marcas, sucursales, canales y etapas de seguimiento.",
     tags: ["full-stack", "saas", "api", "ai", "automation"],
     highlights: [
-      "Autoría única - diseño y ejecución end-to-end del producto",
+      "Mi rol: diseño de producto e implementación de extremo a extremo del frontend y el agente de IA, con backend desarrollado por un socio",
+      "Agente de IA en tiempo real con RAG y ejecución de herramientas integrado al flujo comercial",
       "Centralización del proceso comercial desde el contacto hasta la cotización",
       "Seguimiento multimarca y multisucursal en un mismo flujo operativo",
-      "Integración de canales de comunicación y automatizaciones",
-      "Tableros para seguimiento de indicadores comerciales"
+      "Integración de canales de comunicación, automatizaciones y tableros de seguimiento"
     ],
     metrics: [
-      "Autoría end-to-end",
+      "Frontend + agente de IA",
       "Operación multimarca",
       "Operación multisucursal"
     ],
-    stack: []
+    stack: ["Diseño de producto", "Frontend", "RAG", "Tool calling"]
   },
   {
     id: "sw-content-intelligence-system",

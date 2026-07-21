@@ -34,8 +34,8 @@ const proof = [
   },
   {
     value: "US$21.7k",
-    label: "Projected annual savings",
-    detail: "17-license replacement scenario, before extensions; pending internal validation",
+    label: "Projected annual space-planning savings",
+    detail: "Replacement scenario for 17 specialized licenses; pending internal validation",
     tone: "mineral"
   },
   {
