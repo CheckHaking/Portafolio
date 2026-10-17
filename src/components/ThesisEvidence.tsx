@@ -4,19 +4,19 @@ const evidence = {
   es: [
   {
     src: "/images/thesis/detection.png",
-    alt: "Detección de dedos dentro de la zona de riesgo de una prensa industrial",
-    caption: "Detección en operación: localización de dedos dentro de la zona de riesgo.",
+    alt: "Muestra de una prensa industrial con dedos delimitados por recuadros rojos",
+    caption: "Muestra etiquetada: dedos señalados en la zona de riesgo de una prensa industrial.",
     className: "thesis-media-main"
   },
   {
     src: "/images/thesis/label-studio.png",
-    alt: "Interfaz de Label Studio utilizada para etiquetar imágenes del dataset",
-    caption: "Etiquetado supervisado del dataset en Label Studio.",
+    alt: "Interfaz de Label Studio con recuadros de la clase dedo sobre una imagen de la prensa",
+    caption: "Etiquetado de dedos en Label Studio para el conjunto de datos.",
     className: ""
   },
   {
     src: "/images/thesis/interlock-schematic.png",
-    alt: "Diagrama del circuito electrónico de interbloqueo de seguridad",
+    alt: "Esquema del interbloqueo experimental entre la Jetson, el módulo de relé y el pedal",
     caption: "Esquema del interbloqueo experimental; prototipo no certificado.",
     className: "thesis-media-schematic"
   }
@@ -24,19 +24,19 @@ const evidence = {
   en: [
     {
       src: "/images/thesis/detection.png",
-      alt: "Finger detection inside the hazard zone of an industrial press brake",
-      caption: "Operational detection: fingers localized inside the defined hazard zone.",
+      alt: "Sample image of an industrial press with fingers marked by red bounding boxes",
+      caption: "Labeled sample: fingers marked in the hazard zone of an industrial press.",
       className: "thesis-media-main"
     },
     {
       src: "/images/thesis/label-studio.png",
-      alt: "Label Studio interface used to annotate the dataset",
-      caption: "Supervised dataset annotation in Label Studio.",
+      alt: "Label Studio interface with finger-class bounding boxes on an image of the press",
+      caption: "Finger annotation in Label Studio for the dataset.",
       className: ""
     },
     {
       src: "/images/thesis/interlock-schematic.png",
-      alt: "Electronic schematic of the physical safety interlock",
+      alt: "Experimental interlock schematic connecting the Jetson, relay module and pedal",
       caption: "Experimental interlock schematic; non-certified prototype.",
       className: "thesis-media-schematic"
     }

@@ -197,19 +197,19 @@ export default function EnglishHomePage() {
                   sizes="(max-width: 767px) 100vw, 46vw"
                 />
               </div>
-              <figcaption>Thesis presentation on Computer Vision and industrial safety.</figcaption>
+              <figcaption>Thesis presentation on Computer Vision applied to industrial safety.</figcaption>
             </figure>
 
             <figure className="about-me-photo about-me-photo-document">
               <div className="about-me-image-wrap">
                 <Image
                   src="/images/about/tesis-documento-ulsa.jpeg"
-                  alt="Sergio Antunez Rios holding his thesis document at Universidad La Salle Laguna"
+                  alt="Sergio Antunez Rios holding his bound thesis at Universidad La Salle Laguna"
                   fill
                   sizes="(max-width: 767px) 100vw, 56vw"
                 />
               </div>
-              <figcaption>Final thesis document, Universidad La Salle Laguna.</figcaption>
+              <figcaption>Bound thesis, Universidad La Salle Laguna.</figcaption>
             </figure>
           </div>
         </section>

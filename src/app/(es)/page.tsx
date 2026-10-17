@@ -122,7 +122,7 @@ export default function HomePage() {
             </div>
             <figcaption>
               <strong>Sergio Antunez Rios</strong>
-              <span>Ingeniero Electromédico y Analista de Innovación e IA</span>
+              <span>Ingeniero electromédico y analista de innovación e IA</span>
             </figcaption>
           </figure>
         </section>
@@ -178,7 +178,7 @@ export default function HomePage() {
                   sizes="(max-width: 767px) 100vw, 30vw"
                 />
               </div>
-              <figcaption>Graduación de Ingeniería Electromédica, 2026.</figcaption>
+              <figcaption>Graduación en Ingeniería Electromédica, 2026.</figcaption>
             </figure>
 
             <figure className="about-me-photo about-me-photo-thesis">
@@ -190,19 +190,19 @@ export default function HomePage() {
                   sizes="(max-width: 767px) 100vw, 46vw"
                 />
               </div>
-              <figcaption>Presentación de tesis sobre visión artificial y seguridad industrial.</figcaption>
+              <figcaption>Presentación de la tesis sobre visión artificial aplicada a la seguridad industrial.</figcaption>
             </figure>
 
             <figure className="about-me-photo about-me-photo-document">
               <div className="about-me-image-wrap">
                 <Image
                   src="/images/about/tesis-documento-ulsa.jpeg"
-                  alt="Sergio Antunez Rios sosteniendo el documento de su tesis en la Universidad La Salle Laguna"
+                  alt="Sergio Antunez Rios con su tesis encuadernada en la Universidad La Salle Laguna"
                   fill
                   sizes="(max-width: 767px) 100vw, 56vw"
                 />
               </div>
-              <figcaption>Documento final de tesis, Universidad La Salle Laguna.</figcaption>
+              <figcaption>Tesis encuadernada, Universidad La Salle Laguna.</figcaption>
             </figure>
           </div>
         </section>
